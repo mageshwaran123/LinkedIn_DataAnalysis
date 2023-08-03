@@ -30,7 +30,8 @@ Customize Appearance: The plot's title, x-axis, and y-axis labels are set using 
 
 Display and Save: The interactive line graph is displayed using fig.show(), and it is saved as an HTML file named "Forecasted_Growth_ConnectionsOver_Time.html" using fig.write_html()
 
-# 3. Visualizes the distribution of the top positions and their associated companies using a treemap & 4. Visualizes Distribution of the top positions and their associated companies using a treemap
+# 3. Visualizes the distribution of the top positions and their associated companies using a treemap & 
+# 4. Visualizes Distribution of the top positions and their associated companies using a treemap
 
 Create Pivot Table: A pivot table is created using df.pivot_table, which counts the occurrences of each position in each company. The resulting DataFrame is named df_by_company_position.
 
