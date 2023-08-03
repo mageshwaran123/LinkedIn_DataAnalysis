@@ -1,5 +1,15 @@
 # LinkedIn_DataAnalysis
 
+DataSet -
+To get a copy of your LinkedIn data:
+
+Click "Me" → "Settings & Privacy."
+Go to "Data Privacy."
+Click "Get a copy of your data."
+Choose data categories and request the archive.
+Receive an email with the download link.
+Download within 72 hours.
+
 # 1. Connection Growth Over Time:
 
 Load Data: The code loads connection data from the CSV file "Connection_Data.csv" into a pandas DataFrame named df.
