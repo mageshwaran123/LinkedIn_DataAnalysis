@@ -30,14 +30,6 @@ Customize Appearance: The plot's title, x-axis, and y-axis labels are set using 
 
 Display and Save: The interactive line graph is displayed using fig.show(), and it is saved as an HTML file named "Forecasted_Growth_ConnectionsOver_Time.html" using fig.write_html()
 
-Visualizes the distribution of the top companies and positions using a treemap
-
-Convert to Long Format: The pivot table is converted to a long-format DataFrame using pd.melt. This transformation allows easier handling of data for plotting.
-
-Sort Data: The DataFrame is sorted in descending order based on the count of individuals in each company-position combination using sort_values.
-
-Create Treemap: Using Plotly Express (px.treemap), the code creates a treemap visualization. The treemap represents the top 100 companies and positions based on the sorted DataFrame. The size of each rectangle in the treemap corresponds to the number of individuals in that specific company-position combination.
-
 # 3. Visualizes the distribution of the top positions and their associated companies using a treemap & 4. Visualizes Distribution of the top positions and their associated companies using a treemap
 
 Create Pivot Table: A pivot table is created using df.pivot_table, which counts the occurrences of each position in each company. The resulting DataFrame is named df_by_company_position.
