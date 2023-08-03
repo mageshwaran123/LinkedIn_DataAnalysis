@@ -38,17 +38,26 @@ Sort Data: The DataFrame is sorted in descending order based on the count of ind
 
 Create Treemap: Using Plotly Express (px.treemap), the code creates a treemap visualization. The treemap represents the top 100 companies and positions based on the sorted DataFrame. The size of each rectangle in the treemap corresponds to the number of individuals in that specific company-position combination.
 
-# 3. Visualizes the distribution of the top positions and their associated companies using a treemap
+# 3. Visualizes the distribution of the top positions and their associated companies using a treemap & 4. Visualizes Distribution of the top positions and their associated companies using a treemap
 
-Sort Data: The DataFrame is sorted in descending order based on the count of individuals in each position-company combination using sort_values.
+Create Pivot Table: A pivot table is created using df.pivot_table, which counts the occurrences of each position in each company. The resulting DataFrame is named df_by_company_position.
 
-Create Treemap: Using Plotly Express (px.treemap), the code creates a treemap visualization. The treemap represents the top 100 positions and their associated companies based on the sorted DataFrame. The size of each rectangle in the treemap corresponds to the number of individuals in that specific position-company combination.
+Convert to Long Format: The pivot table is converted to a long-format DataFrame using pd.melt. This transformation allows easier handling of data for plotting.
+
+Sort Data: The DataFrame is sorted in descending order based on the count of individuals in each company-position combination using sort_values.
+
+4. Sort Data: The DataFrame is sorted in descending order based on the count of individuals in each position-company combination using sort_values.
+
+Create Treemap: Using Plotly Express (px.treemap), the code creates a treemap visualization. The treemap represents the top 100 companies and positions based on the sorted DataFrame. The size of each rectangle in the treemap corresponds to the number of individuals in that specific company-position combination.
+
+4. Create Treemap: Using Plotly Express (px.treemap), the code creates a treemap visualization. The treemap represents the top 100 positions and their associated companies based on the sorted DataFrame. The size of each rectangle in the treemap corresponds to the number of individuals in that specific position-company combination.
 
 Customize Appearance: The treemap's title and labels are set using labels and title parameters.
 
-Display and Save: The interactive treemap is displayed using fig.show(), and it is saved as an HTML file named "Distribution_of_top_positions.html" using fig.write_html().
+Display and Save: The interactive treemap is displayed using fig.show(), and it is saved as an HTML file named "Distribution_of_top_companies.html" using fig.write_html()
+"Distribution_of_top_positions.html"
 
-# Network Analysis:
+# 5. Network Analysis:
 
 Install igraph: The code installs the igraph library using the !pip install command.
 
